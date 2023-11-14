@@ -1,0 +1,13 @@
+def min_max_sum(n, arr):
+    total_sum = sum(arr)
+    min_sum = total_sum - max(arr)
+    max_sum = total_sum - min(arr)
+    return min_sum, max_sum
+
+# Input
+n = int(input())
+arr = list(map(int, input().split()))
+
+# Calculate and print the result
+result = min_max_sum(n, arr)
+print(*result)
